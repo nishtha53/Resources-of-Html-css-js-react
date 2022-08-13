@@ -1,3 +1,25 @@
-App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
+
+* {
+  font-family: 'Archivo', sans-serif;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+body {
+  background-color: #B2E097;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #008E74;
+  border-color: white;
+  border: #008E74;
 }

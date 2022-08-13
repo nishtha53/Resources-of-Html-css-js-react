@@ -1,5 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Button from 'react-bootstrap/Button';
 
 var webresources = {
   Html: [
@@ -7,23 +9,57 @@ var webresources = {
       meaning:
         "HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.",
       webResources: [
-        "https://www.w3schools.com/",
-        "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        "https://www.codecademy.com/",
-        "https://www.tutorialspoint.com/html/html_useful_resources.htm"
+        {
+          "name": "W3 school",
+          "link": " https://www.w3schools.com/",
+        },
+        {
+          "name": "MDN Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        },
+        {
+          "name": "Code Academy",
+          "link": "https://www.codecademy.com/",
+        },
+        {
+          "name": "tutorialspoint",
+          "link": "https://www.tutorialspoint.com/html/html_useful_resources.htm",
+        }
       ],
       youtubeChannel: [
-        "https://youtu.be/BsDoLVMnmZs",
-        "https://youtu.be/pQN-pnXPaVg",
-        "https://youtu.be/qz0aGYrrlhU"
+        {
+          "name": "Code with Harry by HTML",
+          "link": "https://youtu.be/BsDoLVMnmZs",
+        },
+        {
+          "name": "Free CodeCamp",
+          "link": "https://youtu.be/pQN-pnXPaVg",
+        },
+        {
+          "name": "Programming with Mosh",
+          "link": "https://youtu.be/qz0aGYrrlhU",
+        },
       ],
       platformYouCanPractice: [
-        "https://codepen.io/features/",
-        "https://onecompiler.com/html",
-        "https://www.programiz.com/html/online-compiler/"
+        {
+          "name": "CodePen",
+          "link": "https://codepen.io/features/",
+        },
+        {
+          "name": "One Compiler",
+          "link": "https://onecompiler.com/html",
+        },
+        {
+          "name": "Programiz",
+          "link": "https://www.programiz.com/html/online-compiler/"
+        },
       ],
-      projectIdeas:
-        "1. Create Web Form 2. A Questionnaire 3.Technical Documentation 4.Portfolio 5.Netflix web clone 6.Whatsapp clone"
+      projectIdeas: [
+        "⦿ Create Web Form ",
+        "⦿ A Questionnaire",
+        "⦿ Technical Documentation",
+        "⦿ Portfolio 5.Netflix web clone 6.Whatsapp clone"
+      ]
     }
   ],
   Css: [
@@ -31,23 +67,58 @@ var webresources = {
       meaning:
         "CSS (Cascading Style Sheets) allows you to create great-looking web pages.",
       webResources: [
-        "https://www.w3schools.com/",
-        "https://web.dev/learn/css/",
-        "https://www.codecademy.com/learn/learn-css",
-        "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        {
+          "name": "W3School",
+          "link": "https://www.w3schools.com/",
+        },
+        {
+          "name": "Web Dev",
+          "link": "https://web.dev/learn/css/",
+        },
+        {
+          "name": "Code Academy",
+          "link": "https://www.codecademy.com/learn/learn-css",
+        },
+        {
+          "name": "MDN Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
       ],
+
       youtubeChannel: [
-        "https://youtu.be/aook54SsfhY",
-        "https://youtu.be/Edsxf_NBFrw",
-        "https://youtu.be/n4R2E7O-Ngo"
+        {
+          "name": "Free Code Camp CSS",
+          "link": "https://youtu.be/aook54SsfhY",
+        },
+        {
+          "name": "Code with Harry CSS",
+          "link": "https://youtu.be/Edsxf_NBFrw",
+        },
+        {
+          "name": "Dave Gray CSS",
+          "link": "https://youtu.be/n4R2E7O-Ngo",
+        }
       ],
       platformYouCanPractice: [
-        "https://codepen.io/features/",
-        "https://www.tutorialspoint.com/online_css_editor.php",
-        "https://onecompiler.com/html/3wx7252uq"
+        {
+          "name": "CodePen",
+          "link": "https://codepen.io/features/",
+        },
+        {
+          "name": "One Compiler",
+          "link": "https://onecompiler.com/html",
+        },
+        {
+          "name": "Tutorials Point",
+          "link": "https://www.tutorialspoint.com/online_css_editor.php"
+        },
       ],
-      projectIdeas:
-        "1. Create Web Form  2. A Questionnaire 3.Technical Documentation 4.Portfolio 5.Netflix web clone 6.Whatsapp clone"
+      projectIdeas: [
+        "⦿ Create Web Form ",
+        "⦿ A Questionnaire",
+        "⦿ Technical Documentation",
+        "⦿ Portfolio 5.Netflix web clone 6.Whatsapp clone"
+      ]
     }
   ],
   Javascript: [
@@ -55,23 +126,59 @@ var webresources = {
       meaning:
         "JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites.",
       webResources: [
-        "https://javascript.info/",
-        "https://www.w3schools.com/js/DEFAULT.asp",
-        "https://www.javascript.com/ ",
-        "https://developer.mozilla.org/en-US/docs/Web/javascript"
+        {
+          "name": "Javascript Info",
+          "link": "https://javascript.info/"
+        },
+        {
+          "name": "W3 School",
+          "link": "https://www.w3schools.com/js/DEFAULT.asp",
+        },
+        {
+          "name": "JavaScript",
+          "link": "https://www.javascript.com/ ",
+        },
+        {
+          "name": " MDN Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        }
       ],
       youtubeChannel: [
-        "https://youtu.be/Qqx_wzMmFeA",
-        "https://youtu.be/2Ji-clqUYnA",
-        "https://youtu.be/jS4aFq5-91M"
+        {
+          "name": "Javascript By Clever programmer",
+          "link": "https://youtu.be/Qqx_wzMmFeA",
+        },
+        {
+          "name": "Codding Addict",
+          "link": "https://youtu.be/2Ji-clqUYnA",
+        },
+        {
+          "name": "JS by Free Code Camp",
+          "link": "https://youtu.be/jS4aFq5-91M"
+        }
       ],
       platformYouCanPractice: [
-        "https://www.programiz.com/javascript/online-compiler/ ",
-        "https://playcode.io/online-javascript-compiler",
-        "https://onecompiler.com/javascript/3wnng9xz5"
+        {
+          "name": "Programiz",
+          "link": "https://www.programiz.com/javascript/online-compiler/",
+        },
+        {
+          "name": "One Compiler",
+          "link": "https://onecompiler.com/javascript/3wnng9xz5",
+        },
+        {
+          "name": "Play Code",
+          "link": "https://playcode.io/online-javascript-compiler",
+        },
       ],
-      projectIdeas:
-        "1. JavaScript Form Validation  2. Real-time Weather app  3. Movie App  4. BMI Calculator 5. Random Quote Generator  6. Calculator"
+      projectIdeas: [
+        "⦿ JavaScript Form Validation",
+        "⦿ Real-time Weather app",
+        "⦿ Movie App",
+        "⦿ BMI Calculator",
+        "⦿ Random Quote Generator",
+        "⦿ Calculator"
+      ]
     }
   ],
   React: [
@@ -79,22 +186,56 @@ var webresources = {
       meaning:
         "React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
       webResources: [
-        "https://reactjs.org/tutorial/tutorial.html",
-        "https://www.javatpoint.com/reactjs-tutorial",
-        "https://www.codecademy.com/learn/react-101",
-        "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
+        {
+          "name": "React js official website",
+          "link": "https://reactjs.org/tutorial/tutorial.html",
+        },
+        {
+          "name": "JavaT Point",
+          "link": "https://www.javatpoint.com/reactjs-tutorial",
+        },
+        {
+          "name": "Code Academy",
+          "link": "https://www.codecademy.com/learn/react-101",
+        },
+        {
+          "name": "MDN Docs",
+          "link": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
+        },
       ],
       youtubeChannel: [
-        "https://youtu.be/iZhV0bILFb0",
-        "https://youtu.be/bMknfKXIFA8"
+        {
+          "name": "Codding Addict",
+          "link": "https://youtu.be/iZhV0bILFb0",
+        },
+        {
+          "name": "React By freecode camp",
+          "link": "https://youtu.be/bMknfKXIFA8"
+        }
       ],
+
       platformYouCanPractice: [
-        "https://onecompiler.com/javascript/3wg6rpqz2",
-        "https://codesandbox.io/framework/react",
-        "https://codedamn.com/online-compiler"
+        {
+          "name": "Codesand Box",
+          "link": "https://codesandbox.io/framework/react",
+        },
+        {
+          "name": "One Compiler",
+          "link": "https://onecompiler.com/javascript/3wnng9xz5",
+        },
+        {
+          "name": "Codedamm",
+          "link": "https://codedamn.com/online-compiler"
+        },
       ],
-      projectIdeas:
-        "1.  Real-Time Chat App  2. To-do List App  3. Movie Recommendation App  4. Weather App in React  5. Social Media App 6. E-Commerce Website"
+      projectIdeas: [
+        "⦿ Real-Time Chat App",
+        "⦿ To-do List App",
+        "⦿ Movie Recommendation App",
+        "⦿ Weather App in React",
+        "⦿ Social Media App",
+        "⦿ E-Commerce Website"
+      ]
     }
   ]
 };
@@ -111,36 +252,35 @@ export default function App() {
 
   return (
     <div className="App">
-      <h4>Know Resources for Web development</h4>
       <div
         className="container"
         style={{
           maxWidth: "600px",
           margin: "auto",
           textAlign: "left"
-        }}
-      >
+        }}>
+        <h2 className="center">Know Resources for Web development</h2>
         {resources.map((webs) => {
           return (
-            <li
+            <ButtonGroup  size="lg"
               style={{
-                listStyle: "none",
                 cursor: "pointer",
                 fontSize: "1.5rem",
                 display: "inline-block",
-                marginRight: "0.5rem",
+                marginLeft: "1rem",
                 padding: "0.5rem 1rem",
-                border: "2px solid black",
-                marginTop: "1rem",
-                borderRadius: "0.5rem"
+                marginTop: "2rem",
               }}
               key={webs}
               onClick={onClickHandler}
             >
-              {webs}
-            </li>
+              <Button className="button">
+                {webs}
+              </Button>
+            </ButtonGroup>
           );
         })}
+        <br />
         <ul>
           {webresources[webResource].map((web) => {
             return (
@@ -150,61 +290,84 @@ export default function App() {
                   style={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "flex-strt"
+                    alignItems: "flex-start",
+                    marginTop: "1.5rem",
                   }}
                 >
-                  <p className="card">{web.meaning}</p>
+                  <h5 className="card" style={{ padding: "1rem" }}>{web.meaning}</h5>
                 </li>
-                <h3>Here are some resources, You can read and learn</h3>
-                {web.webResources.map((link, ind) => (
-                  <li
-                    key={ind}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "flex-strt"
-                    }}
-                  >
-                    <a href={link} target="_blank">
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                <div className="card" style={{ padding: "1rem" }}>
+                  <h5 style={{fontWeight: "bold"}}>Here are some resources, You can read and learn</h5><br />
+                  {web.webResources.map((link, ind) => (
+                    <Button 
+                    className="button"
+                      key={ind}
+                      style={{
+                        marginBottom: "5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <a href={link.link} target="_blank" style={{ "textDecoration": "none", "color": "white" }}>
+                        {link.name}
+                      </a>
+                    </Button>
+                  ))}
+                </div>
                 <br />
-                <h3>Some Youtube video can help to learn</h3>
-                {web.youtubeChannel.map((link, ind) => (
-                  <li
-                    key={ind}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "flex-strt"
-                    }}
-                  >
-                    <a href={link} target="_blank">
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                <div className="card" style={{ padding: "1rem" }}>
+                  <h5 style={{fontWeight: "bold"}}>Some Youtube video can help to learn</h5><br />
+                  {web.youtubeChannel.map((link, ind) => (
+                    <Button
+                    className="button"
+                      key={ind}
+                      style={{
+                        marginBottom: "5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <a href={link.link} target="_blank" style={{ "textDecoration": "none", "color": "white" }}>
+                        {link.name}
+                      </a>
+                    </Button>
+                  ))}
+                </div>
                 <br />
-                {web.platformYouCanPractice.map((link, ind) => (
-                  <li
-                    key={ind}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "flex-strt"
-                    }}
-                  >
-                    <a href={link} target="_blank">
-                      {link}
-                    </a>
-                  </li>
-                ))}
-                <h3>
-                  Some projects ideas you can create to make concepts strong!
-                </h3>
-                <li
+                <div className="card" style={{ padding: "1rem" }}>
+                  <h5 style={{fontWeight: "bold"}}>Some Online Editor you can use for coding!</h5>
+                  {web.platformYouCanPractice.map((link, ind) => (
+                    <Button
+                    className="button"
+                      key={ind}
+                      style={{
+                        marginBottom: "5px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <a href={link.link} target="_blank" style={{ "textDecoration": "none", "color": "white" }}>
+                        {link.name}
+                      </a>
+                    </Button>
+                  ))}
+                </div><br />
+                <div className="card" style={{ padding: "1rem" }}>
+                  <h5 style={{fontWeight: "bold"}}>
+                    Some projects ideas you can create to make concepts strong!
+                  </h5>
+                  {web.projectIdeas.map((link, ind) => (
+                    <li
+                      key={ind}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-strt"
+                      }}
+                    >
+                      <p href={link}>
+                        {link}
+                      </p>
+                    </li>
+                  ))}
+                  {/* <li
                   key={web.projectIdeas}
                   style={{
                     display: "flex",
@@ -213,7 +376,8 @@ export default function App() {
                   }}
                 >
                   <p>{web.projectIdeas}</p>
-                </li>
+                </li> */}
+                </div>
               </>
             );
           })}
