@@ -262,7 +262,8 @@ export default function App() {
         <h2 className="center">Know Resources for Web development</h2>
         {resources.map((webs) => {
           return (
-            <ButtonGroup  size="lg"
+            <ButtonGroup size="lg"
+            className="btn-group"
               style={{
                 cursor: "pointer",
                 fontSize: "1.5rem",
@@ -294,31 +295,31 @@ export default function App() {
                     marginTop: "1.5rem",
                   }}
                 >
-                  <h5 className="card" style={{ padding: "1rem" }}>{web.meaning}</h5>
+                  <h5 className="card" >{web.meaning}</h5>
                 </li>
-                <div className="card" style={{ padding: "1rem" }}>
-                  <h5 style={{fontWeight: "bold"}}>Here are some resources, You can read and learn</h5><br />
+                <div className="card">
+                  <h5 style={{ fontWeight: "bold" }}>Here are some resources, You can read and learn</h5><br />
                   {web.webResources.map((link, ind) => (
-                    <Button 
-                    className="button"
+                    <Button
+                      // className="button"
                       key={ind}
                       style={{
                         marginBottom: "5px",
                         textAlign: "center",
                       }}
                     >
-                      <a href={link.link} target="_blank" style={{ "textDecoration": "none", "color": "white" }}>
+                      <a href={link.link} target="_blank" style={{ "textDecoration": "none", "color": "white" , cursor: "pointer"}}>
                         {link.name}
                       </a>
                     </Button>
                   ))}
                 </div>
                 <br />
-                <div className="card" style={{ padding: "1rem" }}>
-                  <h5 style={{fontWeight: "bold"}}>Some Youtube video can help to learn</h5><br />
+                <div className="card">
+                  <h5 style={{ fontWeight: "bold" }}>Some Youtube video can help to learn</h5><br />
                   {web.youtubeChannel.map((link, ind) => (
                     <Button
-                    className="button"
+                      // className="button"
                       key={ind}
                       style={{
                         marginBottom: "5px",
@@ -332,11 +333,11 @@ export default function App() {
                   ))}
                 </div>
                 <br />
-                <div className="card" style={{ padding: "1rem" }}>
-                  <h5 style={{fontWeight: "bold"}}>Some Online Editor you can use for coding!</h5>
+                <div className="card" >
+                  <h5 style={{ fontWeight: "bold" }}>Some Online Editor you can use for coding!</h5>
                   {web.platformYouCanPractice.map((link, ind) => (
                     <Button
-                    className="button"
+                      // className="button"
                       key={ind}
                       style={{
                         marginBottom: "5px",
@@ -349,8 +350,8 @@ export default function App() {
                     </Button>
                   ))}
                 </div><br />
-                <div className="card" style={{ padding: "1rem" }}>
-                  <h5 style={{fontWeight: "bold"}}>
+                <div className="card">
+                  <h5 style={{ fontWeight: "bold" }}>
                     Some projects ideas you can create to make concepts strong!
                   </h5>
                   {web.projectIdeas.map((link, ind) => (
@@ -367,16 +368,7 @@ export default function App() {
                       </p>
                     </li>
                   ))}
-                  {/* <li
-                  key={web.projectIdeas}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "flex-strt"
-                  }}
-                >
-                  <p>{web.projectIdeas}</p>
-                </li> */}
+
                 </div>
               </>
             );
@@ -386,3 +378,4 @@ export default function App() {
     </div>
   );
 }
+   

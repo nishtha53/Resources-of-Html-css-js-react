@@ -23,3 +23,22 @@ body {
   border-color: white;
   border: #008E74;
 }
+.card{
+  padding: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .btn-group.btn-group-lg {
+    width: 100%;
+    margin-left:0 !important;
+}
+.button{
+    width: 100%;
+}
+.App ul{
+  padding: 0 1rem !important;
+}
+
+/* .card {
+  padding: 1rem 0;
+} */
+} 
