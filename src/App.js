@@ -58,7 +58,9 @@ var webresources = {
         "⦿ Create Web Form ",
         "⦿ A Questionnaire",
         "⦿ Technical Documentation",
-        "⦿ Portfolio 5.Netflix web clone 6.Whatsapp clone"
+        "⦿ Portfolio" ,
+        "⦿ Netflix web clone",
+        "⦿ Whatsapp clone"
       ]
     }
   ],
@@ -117,7 +119,9 @@ var webresources = {
         "⦿ Create Web Form ",
         "⦿ A Questionnaire",
         "⦿ Technical Documentation",
-        "⦿ Portfolio 5.Netflix web clone 6.Whatsapp clone"
+        "⦿ Portfolio" ,
+        "⦿ Netflix web clone",
+        "⦿ Whatsapp clone"
       ]
     }
   ],
