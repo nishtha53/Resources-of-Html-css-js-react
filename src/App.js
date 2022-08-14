@@ -367,7 +367,7 @@ export default function App() {
                         alignItems: "flex-strt"
                       }}
                     >
-                      <p href={link}>
+                      <p>
                         {link}
                       </p>
                     </li>
